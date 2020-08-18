@@ -10,12 +10,8 @@ node
     {
         sh 'cp index.html /var/www/html/'
     }
-    stage ('Copy Images')
-    {
-        sh 'cp -r images/ /var/www/html/'
-    }
     stage('Notify Email')
     {
-        sh 'Sending email'
+        sh 'echo Sending email'
     }
 }
